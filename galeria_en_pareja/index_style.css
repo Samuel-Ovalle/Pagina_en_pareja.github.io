@@ -1,0 +1,13 @@
+:root{
+    --color-1: #0D0D0D;
+    --color-2: #8C030E;
+    --color-3: #EBEBF2;
+    --color-3: #D91EA7;
+    --color-4: #F235D3;
+}
+body{
+    background: radial-gradient(circle at 20% 50% ,var(--color-3) 20%, var(--color-2) 90%);
+
+    height: 97.5vh;
+    width: 98vw;
+}
