@@ -1,0 +1,142 @@
+:root {
+    --color-1: #000;
+    --color-2: #fff;
+    --color-3: #0D0D0D;
+    --color-4: #8C030E;
+    --color-5: #EBEBF2;
+    --color-6: #D91EA7;
+    --color-7: #F235D3;
+}
+* {
+    color: var(--color-2);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", serif;
+}
+body {
+    background: var(--color-1);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body .center_view{
+    height: 1vh;
+    width: 1vw;
+    position: absolute;
+}
+body .loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body .spotify_player {
+    border: none;
+    height: 20vh;
+    width: 90vw;
+    margin-top: 5vh;
+    display: none;
+}
+body .startBtn{
+    border: none;
+    border-radius: 2vh;
+    background: linear-gradient(var(--color-7), var(--color-4));
+    height: 10vh;
+    width: 70vw;
+    margin-top: 5vh;
+    font-size: 5vh;
+}
+
+body .text_container{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+body .text_container .text-explain {
+    font-size: 3vh;
+    text-align: center;
+}
+
+body .wall {
+    height: 100vh;
+}
+body .wall .frames {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+body .wall1{
+    padding-left: 1vh;
+}
+body .wall2{
+    padding-left: 1vh;
+}
+body .wall1 .frames {
+    top: 100vh;
+    animation: scrollFramesUp 120s linear infinite;
+}
+body .wall2 .frames {
+    animation: scrollFramesDown 120s linear infinite;
+}
+.frame {
+    width: 100%;
+    height: min-content;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    position: relative;
+}
+.frame img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blurr_element{
+    background: #000;
+    opacity: .8;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 5;
+}
+.new-image {
+    position: absolute;  
+    height: min-content; 
+    width: 75vw;
+    top: 2.5vh;
+    left: 12.5vw;         
+    z-index: 10;
+}
+.spotify_player_full{
+    position: absolute;
+    border: none;
+    height: 20vh;
+    width: 75vw;
+    z-index: 9;
+    top: 50vh;
+    left: 12.5vw;
+}
+@keyframes scrollFramesUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+@keyframes scrollFramesDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
