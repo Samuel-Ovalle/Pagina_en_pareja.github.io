@@ -1,0 +1,45 @@
+body{
+    background: radial-gradient(var(--color-4), var(--color-1));
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+body header{
+    height: min-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body header h1{
+    color: var(--color-12);
+    height: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+body main{
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+}
+body main .objeto_enlace{
+    border-radius: 5vh;
+    background: linear-gradient(var(--color-7), var(--color-8));
+    box-shadow: inset 0vh 0vh 5px var(--color-9);
+    height: 35vh;
+    width: 90%;
+    padding: 2vh;
+}
+body main .objeto_enlace svg{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    body main{
+        height: 80vh;
+    }
+}

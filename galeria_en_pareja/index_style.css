@@ -1,0 +1,56 @@
+:root{
+    --color-1: #0D0D0D;
+    --color-2: #8C030E;
+    --color-3: #EBEBF2;
+    --color-3: #D91EA7;
+    --color-4: #F235D3;
+    --color-5: #fff;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    background: radial-gradient(circle at 20% 50% ,var(--color-3) 20%, var(--color-2) 90%);
+
+    width: 100vw;
+
+    overflow-x: hidden;
+}
+body h1{
+    color: var(--color-5);
+    width: 100vw;
+
+    position: sticky;
+    display: block;
+    font-size: 7vh;
+    text-align: center;
+}
+body .wall{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(16, 50vw);
+    position: relative;
+}
+body .wall .frame{
+    width: 100%;
+    height: 100%;
+    padding: .4vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+body .wall .frame img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+img{
+    border-radius: 10%;
+
+}

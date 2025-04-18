@@ -1,0 +1,29 @@
+:root{
+    --color-1: #F20574;
+    --color-2: #F20587;
+    --color-3: #F2059F;
+    --color-4: #F230BF;
+    --color-5: #260101;
+    --color-6: #D90416;
+    --color-7: #BF0404;
+    --color-8: #730202;
+    --color-9: #260101;
+    --color-10: #D9D9D9;
+    --color-11: #000000;
+    --color-12: #ffffff;
+}
+@font-face {
+    font-family: 'PlaywriteCU';
+    src: url("./font/Playwrite_CU/PlaywriteCU-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    font-family: "PlaywriteCU", serif;
+    font-style: normal;
+    padding: 0%;
+    margin: 0%;
+    color: var(--text-color-12);
+    box-sizing: border-box;
+}
